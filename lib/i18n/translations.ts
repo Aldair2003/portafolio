@@ -82,8 +82,8 @@ export const translations: Record<Language, Translations> = {
     hero: {
       greeting: 'Hola, mi nombre es',
       title: 'Aldair Toala',
-      subtitle: 'Desarrollador Full Stack',
-      description: 'Estudiante de Ingeniería de Software en último semestre. Apasionado por el aprendizaje continuo y el desarrollo de soluciones tecnológicas innovadoras. Especializado en diseño frontend y desarrollo full stack.',
+      subtitle: 'Desarrollador',
+      description: 'Desarrollador Full Stack especializado en crear soluciones tecnológicas innovadoras. Apasionado por el diseño frontend y el desarrollo de experiencias de usuario excepcionales.',
       viewProjects: 'Ver Proyectos',
       contact: 'Contactar',
     },
@@ -91,7 +91,7 @@ export const translations: Record<Language, Translations> = {
       title: 'Sobre Mí',
       subtitle: 'Conoce más sobre mi trayectoria y pasión por el desarrollo',
       paragraph1: 'Desarrollador Full Stack en último semestre de Ingeniería de Software en la Pontificia Universidad Católica del Ecuador Sede Manabí. Me especializo en diseño frontend y desarrollo full stack con React, Next.js, Node.js y Python, creando interfaces intuitivas y experiencias de usuario excepcionales.',
-      paragraph2: 'Ganador de los dos primeros hackathones de mi universidad (2024 y 2025). Cofundador de proyectos innovadores como "Lupio" y "Parkintia". Soy uno de los mejores estudiantes de mi promoción y formo parte de la primera promoción de Ingeniería de Software de mi universidad, demostrando compromiso, constancia y pasión por crear soluciones tecnológicas que impacten positivamente.',
+      paragraph2: 'Ganador de los dos primeros hackathones de mi universidad (2024 y 2025). Cofundador de "Parkintia" y desarrollador en "Lupio", proyectos innovadores que demuestran mi capacidad para crear soluciones tecnológicas de impacto. Soy uno de los mejores estudiantes de mi promoción y formo parte de la primera promoción de Ingeniería de Software de mi universidad, demostrando compromiso, constancia y pasión por crear soluciones tecnológicas que impacten positivamente.',
     },
     projects: {
       title: 'Proyectos',
@@ -145,8 +145,8 @@ export const translations: Record<Language, Translations> = {
     hero: {
       greeting: 'Hi, my name is',
       title: 'Aldair Toala',
-      subtitle: 'Full Stack Developer',
-      description: 'Software Engineering student in my last semester. Passionate about continuous learning and developing innovative technological solutions. Specialized in frontend design and full stack development.',
+      subtitle: 'Developer',
+      description: 'Full Stack Developer specialized in creating innovative technological solutions. Passionate about frontend design and developing exceptional user experiences.',
       viewProjects: 'View Projects',
       contact: 'Contact',
     },
@@ -154,7 +154,7 @@ export const translations: Record<Language, Translations> = {
       title: 'About Me',
       subtitle: 'Learn more about my journey and passion for development',
       paragraph1: 'Full Stack Developer in my last semester of Software Engineering at Pontificia Universidad Católica del Ecuador Sede Manabí. I specialize in frontend design and full stack development with React, Next.js, Node.js, and Python, creating intuitive interfaces and exceptional user experiences.',
-      paragraph2: 'Winner of the first two hackathons at my university (2024 and 2025). Co-founder of innovative projects like "Lupio" and "Parkintia". I am one of the top students in my class and part of the first Software Engineering graduating class at my university, demonstrating commitment, consistency, and passion for creating technological solutions that positively impact.',
+      paragraph2: 'Winner of the first two hackathons at my university (2024 and 2025). Co-founder of "Parkintia" and developer in "Lupio", innovative projects that demonstrate my ability to create impactful technological solutions. I am one of the top students in my class and part of the first Software Engineering graduating class at my university, demonstrating commitment, consistency, and passion for creating technological solutions that positively impact.',
     },
     projects: {
       title: 'Projects',
