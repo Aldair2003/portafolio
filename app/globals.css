@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-inter);
+  
+  /* Colores personalizados para modo oscuro */
+  --color-dark-bg: #232222;
+  --color-dark-bg-light: #2a2a2a;
+}
+
+/* Configurar modo oscuro para Tailwind 4 */
+@variant dark (&:where(.dark, .dark *));
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Dark mode - cuando html tiene clase 'dark' */
+html.dark {
+  --background: #232222;
+  --foreground: #f9fafb;
+  color-scheme: dark;
+}
+
+html.light {
+  --background: #ffffff;
+  --foreground: #171717;
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not(.light):not(.dark) {
+    --background: #232222;
+    --foreground: #f9fafb;
   }
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos personalizados */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+html.light body {
+  background-color: #f1f2f6;
+}
+
+html.dark body {
+  background-color: var(--background);
+}
+
+/* Transiciones suaves y elegantes para elementos durante cambio de tema - más rápidas y sutiles */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 0.35s;
+}
+
+/* Transición rápida y sincronizada para texto */
+p, h1, h2, h3, h4, h5, h6, span, a, li, td, th, label, button, input, textarea, select {
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 0.3s;
+}
+
+/* Excluir elementos que no necesitan transición */
+*::before,
+*::after,
+svg,
+video,
+iframe,
+canvas {
+  transition-property: none;
+}
+
+/* Transiciones específicas para imágenes del perfil - más rápidas y suaves */
+img[src*="fotoblanca"],
+img[src*="fotonegra"] {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 0.4s;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #666;
 }
