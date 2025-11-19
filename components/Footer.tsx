@@ -24,8 +24,8 @@ const socialLinks = [
   {
     name: 'LinkedIn',
     icon: FiLinkedin,
-    href: 'https://www.linkedin.com/in/aldair-toala-6059831b8/',
-    username: 'aldair-toala',
+    href: 'https://www.linkedin.com/in/aldairtoala04/',
+    username: 'aldairtoala04',
   },
   {
     name: 'Twitter',

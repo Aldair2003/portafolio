@@ -82,7 +82,7 @@ export const translations: Record<Language, Translations> = {
     hero: {
       greeting: 'Hola, mi nombre es',
       title: 'Aldair Toala',
-      subtitle: 'Desarrollador',
+      subtitle: 'Desarrollador Full Stack',
       description: 'Desarrollador Full Stack especializado en crear soluciones tecnológicas innovadoras. Apasionado por el diseño frontend y el desarrollo de experiencias de usuario excepcionales.',
       viewProjects: 'Ver Proyectos',
       contact: 'Contactar',
@@ -145,7 +145,7 @@ export const translations: Record<Language, Translations> = {
     hero: {
       greeting: 'Hi, my name is',
       title: 'Aldair Toala',
-      subtitle: 'Developer',
+      subtitle: 'Full Stack Developer',
       description: 'Full Stack Developer specialized in creating innovative technological solutions. Passionate about frontend design and developing exceptional user experiences.',
       viewProjects: 'View Projects',
       contact: 'Contact',

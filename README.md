@@ -168,7 +168,7 @@ El portafolio está desplegado en **Vercel** con:
 
 - **Portafolio**: [aldadev.com](https://aldadev.com)
 - **GitHub**: [github.com/Aldair2003](https://github.com/Aldair2003)
-- **LinkedIn**: [linkedin.com/in/aldair-toala-6059831b8](https://www.linkedin.com/in/aldair-toala-6059831b8)
+- **LinkedIn**: [linkedin.com/in/aldairtoala04](https://www.linkedin.com/in/aldairtoala04)
 - **Twitter**: [@alda04x](https://x.com/alda04x)
 - **Email**: aldairtoala04@gmail.com
 
