@@ -20,9 +20,9 @@ export const skills = {
     technologies: [
       { name: 'React', level: 'intermediate', description: 'Biblioteca para construir interfaces interactivas' },
       { name: 'Next.js', level: 'intermediate', description: 'Framework React con SSR y optimizaciones' },
-      { name: 'Vue', level: 'intermediate', description: 'Framework progresivo para interfaces' },
+      { name: 'Vue', level: 'beginner', description: 'Framework progresivo para interfaces' },
       { name: 'Svelte', level: 'intermediate', description: 'Framework compilado para aplicaciones rápidas' },
-      { name: 'Astro', level: 'intermediate', description: 'Framework para sitios estáticos optimizados' },
+      { name: 'Astro', level: 'beginner', description: 'Framework para sitios estáticos optimizados' },
       { name: 'HTML/CSS', level: 'advanced', description: 'Fundamentos web y diseño responsivo' },
       { name: 'Tailwind CSS', level: 'advanced', description: 'Framework CSS utility-first' },
       { name: 'JavaScript', level: 'intermediate', description: 'Lenguaje de programación web' },
@@ -35,8 +35,8 @@ export const skills = {
       { name: 'Node.js', level: 'intermediate', description: 'Runtime de JavaScript para servidores' },
       { name: 'Nest.js', level: 'intermediate', description: 'Framework Node.js escalable' },
       { name: 'Python', level: 'intermediate', description: 'Lenguaje versátil para desarrollo backend' },
-      { name: 'Flask', level: 'intermediate', description: 'Framework web ligero de Python' },
-      { name: 'REST APIs', level: 'intermediate', description: 'Diseño e implementación de APIs RESTful' },
+      { name: 'Flask', level: 'beginner', description: 'Framework web ligero de Python' },
+      { name: 'REST APIs', level: 'beginner', description: 'Diseño e implementación de APIs RESTful' },
     ],
   },
   database: {

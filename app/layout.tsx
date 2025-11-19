@@ -51,12 +51,26 @@ export const metadata: Metadata = {
     description:
       "Portafolio de Aldair Toala, desarrollador Full Stack. Estudiante de Ingeniería de Software en último semestre. Especializado en diseño frontend y desarrollo de soluciones innovadoras.",
     siteName: "Aldair Toala Portfolio",
+    images: [
+      {
+        url: "https://aldadev.com/portafolio_logo1.png",
+        width: 1200,
+        height: 630,
+        alt: "Aldair Toala - Desarrollador Full Stack",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aldair Toala - Desarrollador Full Stack",
     description:
       "Portafolio de Aldair Toala, desarrollador Full Stack. Estudiante de Ingeniería de Software en último semestre. Especializado en diseño frontend y desarrollo de soluciones innovadoras.",
+    images: ["https://aldadev.com/portafolio_logo1.png"],
+  },
+  icons: {
+    icon: "/portafolio_logo1.png",
+    apple: "/portafolio_logo1.png",
+    shortcut: "/portafolio_logo1.png",
   },
   robots: {
     index: true,
@@ -83,7 +97,8 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/portafolio_logo1.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/portafolio_logo1.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://avatars.githubusercontent.com" />
