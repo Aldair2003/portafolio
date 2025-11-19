@@ -62,7 +62,7 @@ export const experiences: Record<Language, ExperienceItem[]> = {
     },
     {
       type: 'work',
-      title: 'Cofundador y Desarrollador Principal',
+      title: 'Desarrollador Principal',
       organization: 'Lupio - Plataforma de Cuidado de Mascotas',
       location: 'Ecuador',
       startDate: '2025',
@@ -137,7 +137,7 @@ export const experiences: Record<Language, ExperienceItem[]> = {
     },
     {
       type: 'work',
-      title: 'Co-founder and Lead Developer',
+      title: 'Lead Developer',
       organization: 'Lupio - Pet Care Platform',
       location: 'Ecuador',
       startDate: '2024',

@@ -19,7 +19,7 @@ const Experience = memo(function Experience() {
   return (
     <section
       id="experience"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-dark-bg"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-dark-bg scroll-mt-20 sm:scroll-mt-24"
     >
       <div className="container mx-auto max-w-4xl">
         <motion.div

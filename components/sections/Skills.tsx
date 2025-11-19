@@ -155,7 +155,7 @@ const Skills = memo(function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-dark-bg-light/50"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-dark-bg-light/50 scroll-mt-20 sm:scroll-mt-24"
     >
       <div className="container mx-auto max-w-7xl">
         {/* Header */}

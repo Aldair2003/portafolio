@@ -69,7 +69,7 @@ const Contact = memo(function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-dark-bg-light/50"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-dark-bg-light/50 scroll-mt-20 sm:scroll-mt-24"
     >
       <div className="container mx-auto max-w-4xl">
         <motion.div

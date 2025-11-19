@@ -18,7 +18,7 @@ const AboutCompact = memo(function AboutCompact() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="mt-8 sm:mt-0"
+      className="mt-8 sm:mt-0 scroll-mt-20 sm:scroll-mt-24"
     >
       <h2 className="font-semibold text-gray-900 dark:text-white text-lg mb-3">
         {t.about.title}
