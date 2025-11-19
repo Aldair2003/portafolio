@@ -112,19 +112,20 @@ const SkillBadge = memo(function SkillBadge({
     >
       <div
         className={`
-          relative px-5 py-3 rounded-xl border-2 transition-all duration-300 cursor-pointer
+          relative px-4 py-3 sm:px-5 sm:py-3 rounded-xl border-2 transition-all duration-300 cursor-pointer
           ${level.border} ${level.bg}
           hover:shadow-lg hover:scale-105
           ${isHovered ? 'shadow-lg scale-105' : ''}
+          h-full flex flex-col justify-center
         `}
       >
-        <div className="flex items-center justify-between gap-3">
-          <span className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">
+        <div className="flex items-center justify-between gap-2 sm:gap-3">
+          <span className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm md:text-base truncate flex-1">
             {tech.name}
           </span>
-          <div className="flex items-center gap-2">
-            <div className={`w-2 h-2 rounded-full ${level.dot}`} />
-            <span className="text-xs text-gray-600 dark:text-gray-400 hidden sm:inline">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            <div className={`w-2 h-2 rounded-full ${level.dot} shrink-0`} />
+            <span className="text-xs text-gray-600 dark:text-gray-400 hidden sm:inline whitespace-nowrap">
               {level.label}
             </span>
           </div>
@@ -174,8 +175,8 @@ const Skills = memo(function Skills() {
           </p>
         </motion.div>
 
-        {/* Skills Grid - Diseño más compacto */}
-        <div className="space-y-10">
+        {/* Skills Grid - Diseño más compacto y simétrico */}
+        <div className="space-y-8 sm:space-y-10">
           {Object.entries(skills).map(([key, category], categoryIndex) => (
             <motion.div
               key={key}
@@ -183,22 +184,23 @@ const Skills = memo(function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+              className="w-full"
             >
               {/* Category Header */}
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 {(() => {
                   const IconComponent = category.icon;
                   return (
-                    <IconComponent className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                    <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600 dark:text-purple-400 shrink-0" />
                   );
                 })()}
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
                   {category.title}
                 </h3>
               </div>
 
               {/* Technologies Grid - Badges */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
                 {category.technologies.map((tech, index) => (
                   <SkillBadge
                     key={tech.name}
