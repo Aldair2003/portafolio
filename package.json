@@ -14,7 +14,7 @@
     "@google-analytics/data": "^5.2.1",
     "firebase": "^12.6.0",
     "framer-motion": "^12.23.24",
-    "next": "16.0.3",
+    "next": "16.0.10",
     "nodemailer": "^7.0.10",
     "react": "19.2.0",
     "react-dom": "19.2.0",
